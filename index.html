@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="GSMSniffer : GSM短信嗅探分析套件" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>GSMSniffer</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/le4f/gsmsniff">View on GitHub</a>
+
+          <h1 id="project_title">GSMSniffer</h1>
+          <h2 id="project_tagline">GSM短信嗅探分析套件</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/le4f/gsmsniff/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/le4f/gsmsniff/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="gsmsniffer" class="anchor" href="#gsmsniffer"><span class="octicon octicon-link"></span></a>GSMSniffer</h3>
+
+<p>GSMSniffer 借助 Osmocom-BB 平台,对2G网络短信嗅探抓取的一个Demo
+实现自动载入系统/扫描基站与抓取短信并存入数据库的过程
+项目公开代码为Python处理部分,完整框架演示可参考:</p>
+
+<p><a href="http://le4f.net/post/post/gsm-sniffer-hacking-toolkits-demo">http://le4f.net/post/post/gsm-sniffer-hacking-toolkits-demo</a></p>
+
+<h3>
+<a name="%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E" class="anchor" href="#%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E"><span class="octicon octicon-link"></span></a>文件说明</h3>
+
+<pre><code>.
+├── smshack.py(核心代码)
+├── smssniff.mov(演示视频)
+├── gsmhack
+│   ├── scan.sh(调用OsmocomBB扫描基站)
+│   ├── sniff.sh(调用OsmocomBB嗅探基站短信)
+│   ├── start_osmbb.sh(调用OsmocomBB载入系统)
+│   └── Demo
+│          ├── sms.sql(导入Mysql数据库)
+│          └── test.py(测试,发送短信数据包)
+└── readme.md(项目说明)
+</code></pre>
+
+<h3>
+<a name="%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8" class="anchor" href="#%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8"><span class="octicon octicon-link"></span></a>工具使用</h3>
+
+<p>需求配置好Osmocom-BB环境的PC/C118嗅探手机/修改数据库连接信息,创建数据库并测试连接成功</p>
+
+<pre><code>1.插入C118手机数据线,连接至已配置好Osmocom-BB的PC
+2.$ python smshack.py
+3.按下C118挂机键，等待手机出现Osmocom-bb系统
+4.载入系统成功，输入y回车
+5.脚本自动扫描基站信息
+6.从返回信息中选择信号较强的基站
+7.Sniffer自动启动,此时如抓取到短信则显示并自动push到mysql中
+</code></pre>
+
+<h3>
+<a name="%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91" class="anchor" href="#%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91"><span class="octicon octicon-link"></span></a>演示视频</h3>
+
+<p><a href="https://github.com/le4f/gsmsniff/">https://github.com/le4f/gsmsniff/</a></p>
+
+<h3>
+<a name="%E6%96%87%E7%AB%A0%E5%8F%82%E8%80%83" class="anchor" href="#%E6%96%87%E7%AB%A0%E5%8F%82%E8%80%83"><span class="octicon octicon-link"></span></a>文章参考</h3>
+
+<p><a href="http://le4f.net/post/post/gsm-sniffer-hacking-toolkits-demo">http://le4f.net/post/post/gsm-sniffer-hacking-toolkits-demo</a></p>
+
+<p><a href="http://le4f.net/post/post/compile-osmocombb&amp;problems-about-gsm-sniffer">http://le4f.net/post/post/compile-osmocombb&amp;problems-about-gsm-sniffer</a></p>
+
+<h3>
+<a name="author" class="anchor" href="#author"><span class="octicon octicon-link"></span></a>Author</h3>
+
+<p><a href="http://le4f.net/">le4f</a></p>
+
+<p>Contact Me @ le4f[#]xdsec.org</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">GSMSniffer maintained by <a href="https://github.com/le4f">le4f</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
