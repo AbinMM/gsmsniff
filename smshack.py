@@ -54,7 +54,8 @@ def handle_message(**kargs):
 
     while True:
         data = kargs['messages'].get(True)
-        if data[0:2] == '\x02\x04':
+        if data[0:2] == '\x02\x04': #GSM_TAP header Version02 & HeaderLength 16bytes
+
             #uplink = struct.unpack('H', data[4:6])[0]
             #uplink = (uplink & 0x40 == 0x40)
             #print data.encode('hex')
