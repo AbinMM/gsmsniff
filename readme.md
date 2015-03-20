@@ -9,13 +9,6 @@ GSMSniffer 借助 Osmocom-BB 平台,对2G网络短信嗅探抓取的一个Demo
 
 ### 文件说明
 
-<<<<<<< HEAD
-[http://le4f.github.io/gsmsniff](http://le4f.github.io/gsmsniff)
-
----
-
-2015.3.20 更新,补充去年演示的Web页面.使用Python 
-ButterFly库,修改页面部分内容即可临时使用.
 =======
 ```
 .
@@ -53,6 +46,9 @@ ButterFly库,修改页面部分内容即可临时使用.
 
 [http://le4f.net/post/post/compile-osmocombb&problems-about-gsm-sniffer](http://le4f.net/post/post/compile-osmocombb&problems-about-gsm-sniffer)
 
+### 更新
+
+加入去年演示时的Web界面,调用Python ButterFly库,修改相应代码即可套用.
+
 ### Author
 [le4f](http://le4f.net/)
->>>>>>> FETCH_HEAD
