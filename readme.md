@@ -8,7 +8,6 @@ GSMSniffer 借助 Osmocom-BB 平台,对2G网络短信嗅探抓取的一个Demo
 [http://le4f.net/post/post/gsm-sniffer-hacking-toolkits-demo](http://le4f.net/post/post/gsm-sniffer-hacking-toolkits-demo)
 
 ### 文件说明
-
 =======
 ```
 .
@@ -48,7 +47,7 @@ GSMSniffer 借助 Osmocom-BB 平台,对2G网络短信嗅探抓取的一个Demo
 
 ### 更新
 
-加入去年演示时的Web界面,调用Python ButterFly库,修改相应代码即可套用.
+@2015.3.20 加入去年演示时的Web界面,调用Python ButterFly库,修改相应代码即可套用.
 
 ### Author
 [le4f](http://le4f.net/)
